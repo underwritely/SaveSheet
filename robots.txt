@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://underwritely.github.io/SaveSheet.github.io/sitemap.xml
+Sitemap: https://underwritely.github.io/SaveSheet/sitemap.xml
