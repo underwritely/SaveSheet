@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The 50/30/20 Budget Rule in a Spreadsheet (Setup + Example)</title>
+<meta name="description" content="How to set up the 50/30/20 budget rule in Excel or Google Sheets: what counts as needs, wants and savings, a worked example on a $4,600 income, the formulas, and when to bend the rule.">
+<link rel="canonical" href="https://underwritely.github.io/SaveSheet/blog/50-30-20-budget-spreadsheet.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The 50/30/20 Budget Rule in a Spreadsheet (Setup + Example)">
+<meta property="og:description" content="Needs, wants, savings — set up the 50/30/20 rule in a spreadsheet in 10 minutes, with a worked example.">
+<meta property="og:url" content="https://underwritely.github.io/SaveSheet/blog/50-30-20-budget-spreadsheet.html">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+"headline":"The 50/30/20 Budget Rule in a Spreadsheet (Setup + Example)",
+"description":"How to set up the 50/30/20 budget rule in Excel or Google Sheets, with a worked example.",
+"author":{"@type":"Organization","name":"SaveSheet"},
+"publisher":{"@type":"Organization","name":"SaveSheet"},
+"datePublished":"2026-06-10","dateModified":"2026-06-10",
+"mainEntityOfPage":"https://underwritely.github.io/SaveSheet/blog/50-30-20-budget-spreadsheet.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is the 50/30/20 rule based on gross or take-home pay?",
+"acceptedAnswer":{"@type":"Answer","text":"Take-home (after-tax) pay. Using gross income makes every bucket look bigger than the money you can actually spend, and the budget fails in week one."}},
+{"@type":"Question","name":"Do minimum debt payments count as savings in 50/30/20?",
+"acceptedAnswer":{"@type":"Answer","text":"No — minimum payments are needs, because you must make them. Anything you pay above the minimum counts toward the 20% savings-and-debt bucket."}},
+{"@type":"Question","name":"What if my rent makes needs more than 50%?",
+"acceptedAnswer":{"@type":"Answer","text":"Common in high-rent cities. Shift the ratio — say 60/20/20 — rather than abandoning the system. The point is giving every dollar a job, not hitting an exact percentage."}}
+]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a href="../index.html"><img src="../assets/savesheet-logo.png" alt="SaveSheet"></a>
+  <nav><a href="../index.html">Home</a><a href="how-to-make-a-budget-spreadsheet.html">Guides</a><a href="../index.html#get">Free template</a></nav>
+</div></header>
+
+<div class="wrap"><article class="post">
+<h1>The 50/30/20 Budget Rule in a Spreadsheet (Setup + Example)</h1>
+<p class="meta">Updated June 2026 · 5 min read</p>
+
+<p>The 50/30/20 rule survives because it answers the hardest budgeting question — <em>"how much should I spend on what?"</em> — with three numbers you can remember in the shower. Put it in a spreadsheet and it stops being a slogan and becomes a weekly scoreboard. Here's the full setup, with a worked example.</p>
+
+<h2>The rule in one table</h2>
+<table>
+<tr><th>Bucket</th><th>Share of take-home pay</th><th>What goes in it</th></tr>
+<tr><td><strong>Needs</strong></td><td>~50%</td><td>Rent/mortgage, groceries, utilities, transport, insurance, <em>minimum</em> debt payments</td></tr>
+<tr><td><strong>Wants</strong></td><td>~30%</td><td>Dining out, streaming, hobbies, travel, upgrades you could skip</td></tr>
+<tr><td><strong>Savings &amp; extra debt</strong></td><td>~20%</td><td>Emergency fund, investing, retirement, payments <em>above</em> the minimum</td></tr>
+</table>
+<p>Two details people get wrong: it's <strong>take-home</strong> pay (after tax), and minimum debt payments are <strong>needs</strong> — only the extra you throw at debt counts in the 20%.</p>
+
+<h2>Worked example: $4,600 take-home</h2>
+<table>
+<tr><th>Bucket</th><th>Target</th><th>That means…</th></tr>
+<tr><td>Needs</td><td>$2,300</td><td>Rent $1,500 + groceries $400 + utilities $150 + transport $150 + minimums $100</td></tr>
+<tr><td>Wants</td><td>$1,380</td><td>Eating out, subscriptions, gym, weekend trips</td></tr>
+<tr><td>Savings &amp; extra debt</td><td>$920</td><td>$500 emergency fund + $420 extra on the credit card</td></tr>
+</table>
+<p>If real-life needs come to $2,600 instead of $2,300, the spreadsheet shows exactly where the overflow is — and which want gives way this month. That visibility is the whole game.</p>
+
+<h2>Set it up in a spreadsheet (10 minutes)</h2>
+<h3>1. Targets from one cell</h3>
+<p>Put take-home pay in <code>B1</code>. Then three target cells: <code>=B1*0.5</code>, <code>=B1*0.3</code>, <code>=B1*0.2</code>. Change your income once; every target updates.</p>
+<h3>2. Tag each expense with a bucket</h3>
+<p>In your expense list, add a column: N, W, or S. Total each bucket with <code>=SUMIF(C:C,"N",B:B)</code> — no manual sorting, ever.</p>
+<h3>3. Show target vs actual</h3>
+<p>Three rows: bucket target, bucket actual, difference. Add conditional formatting so the difference turns red when a bucket overflows and green when it's under. One glance, every week, done.</p>
+<p>If you'd rather not wire this yourself, our <a href="how-to-make-a-budget-spreadsheet.html">step-by-step budget spreadsheet guide</a> covers the full build — or skip straight to the free template below with the 50/30/20 check already wired in.</p>
+
+<h2>When to bend the rule</h2>
+<ul>
+<li><strong>High-rent city:</strong> needs at 60% is reality, not failure. Run 60/20/20 and revisit when income grows.</li>
+<li><strong>Debt emergency:</strong> flip wants and savings — 50/20/30 with the 30 attacking the highest-rate balance.</li>
+<li><strong>Variable income:</strong> budget on last month's actual income, and set the ratios against that.</li>
+</ul>
+<blockquote>The percentages are training wheels. The habit — every dollar gets a job before the month starts — is the bike.</blockquote>
+
+<div class="cta">
+  <h2>Get 50/30/20 already wired in — free</h2>
+  <p>The free SaveSheet monthly budget for Excel and Google Sheets includes an automatic 50/30/20 check: type your numbers, see your buckets, fix the overflow. Launching shortly.</p>
+  <p><a class="btn" href="../index.html#get">Get the free template →</a></p>
+</div>
+
+<h2>Frequently asked questions</h2>
+<h3>Gross or take-home pay?</h3>
+<p>Take-home. Budgeting gross income inflates every bucket and the plan collapses on contact with your bank balance.</p>
+<h3>Do minimum debt payments count as savings?</h3>
+<p>No — minimums are needs. Only the extra above the minimum belongs in the 20%.</p>
+<h3>What if needs exceed 50%?</h3>
+<p>Shift the ratio (60/20/20 is common in expensive cities). Keep the system; adjust the numbers.</p>
+
+<p style="margin-top:30px"><a href="../index.html">← Back to SaveSheet</a></p>
+</article></div>
+
+<footer class="site"><div class="wrap">
+  <span>© 2026 SaveSheet</span>
+  <span>Your money, sorted in a sheet.</span>
+</div></footer>
+</body>
+</html>
